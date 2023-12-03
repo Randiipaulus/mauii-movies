@@ -1,0 +1,304 @@
+.movie-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  }
+  
+.body-slider {
+  width: 55vh;
+  height: 40vh;
+  margin-left: 13rem;
+  margin-top: 5rem;
+  color: white;
+}
+
+.movie-movie {
+  height: 40rem;
+  width: auto;
+  border-radius: 20px;
+}
+
+.next-arrow {
+  color: white;
+  position: absolute;
+  top: 22rem;
+  left: 29rem;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.prev-arrow {
+  color: white;
+  position: absolute;
+  top: 22rem;
+  left: -65px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.info-movie {
+  color: white;
+  position: absolute;
+  height: 23rem;
+  width: 45rem;
+  top: 13rem;
+  left: 55rem;
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(165, 165, 165, 0.198);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.title-movie {
+  font-size: 30px;
+  width: auto;
+  height: 6rem;
+  margin-left: 2.5rem;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  opacity: 0.5;
+}
+
+.dots {
+  position: absolute;
+  top: 14.5rem;
+  left: -2.5rem;
+}
+
+.dot-self {
+  font-size: 60px;
+  color: white;
+}
+
+.details-info {
+  display: block;
+  text-align: left;
+}
+
+.list-info {
+  display: flex;
+  text-align: left;
+}
+
+.items-info {
+  color: white;
+  border-right: 1px solid white;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.items-info-time {
+  color: white;
+  border-right: 1px solid white;
+  padding-right: 15px;
+  border-left: 1px solid white;
+  padding-left: 15px;
+}
+
+.items-info-age {
+  color: white;
+  background: var(--primary);
+  margin: 25px 10px 0px 10px;  
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.items-info-end {
+  color: white;
+  padding-left: 15px;
+}
+
+.about-info {
+  margin-top: 1.5rem;
+  margin-left: 3.3rem;
+}
+
+.btns-info {
+  margin-top: 1.5rem;
+  margin-left: 3.3rem;
+  display: flex;
+  height: 35px;
+}
+
+.watch {
+  margin-right: 20px;
+  font-size: 17px;
+  color: white;
+  background: var(--primary);
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.watch:hover {
+  background: rgba(255, 0, 0, 0.615);
+}
+
+.my-list-btn {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.my-list-btn:hover {
+  background: rgba(255, 255, 255, 0.388);
+  color: black;
+}
+
+.youtube {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-top: -0.1px;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 17px;
+}
+
+.youtube:hover {
+  background: rgba(255, 255, 255, 0.388);
+  color: black; 
+}
+
+@media (max-width: 1750px) {
+  .movie-carousel {
+    margin-left: -6rem;
+  }
+
+  .info-movie {
+    margin-left: -7rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .info-movie {
+    height: 33rem;
+    width: 70rem;
+    position: relative;
+    top: -58rem;
+    left: 4rem;
+
+  }
+
+  .title-movie {
+    height: 9rem;
+    width: auto;
+  }
+
+  .items-info, .items-info-age, 
+  .items-info-time, .items-info-end,
+  .about-info{
+    font-size: 30px;
+  }
+  .movie-carousel {
+    left: 20rem;
+    top: 40rem;
+  }
+
+  .watch, .my-list-btn, .youtube {
+    font-size: 25px;
+    padding: 3px 10px 40px 10px;
+  }
+
+  .body-slider {
+    width: 45rem;
+  }
+  .movie-movie {
+    width: auto;
+    height: 55rem;
+  }
+
+  .next-arrow {
+    left: 40rem;
+  }
+
+  .prev-arrow {
+    left: -80px;
+  }
+
+  .dots {
+    top: 33rem;
+    left: -2.5rem;
+  }
+
+}
+
+@media (max-width: 430px) { 
+
+  .info-movie {
+    width: 25.5rem;
+    margin-left: 12rem;
+    margin-top: -1rem;
+  }
+
+  .title-movie {
+    height: 4rem;
+    width: auto;
+    margin-left: 8rem;
+  }
+
+  .items-info, .items-info-age, 
+  .items-info-time, .items-info-end,
+  .about-info{
+    font-size: 20px;
+  }
+
+  .details-info {
+    margin-left: -3rem;
+  }
+
+  .movie-carousel {
+    left: -10rem;
+    top: 44rem;
+  }
+
+  .watch, .my-list-btn, .youtube {
+    font-size: 18px;
+    padding: 3px 10px 25px 10px;
+  }
+
+  .body-slider {
+    width: 40rem;
+  }
+  
+  .movie-movie {
+    width: auto;
+    height: 30rem;
+    margin-left: 6.5rem;
+  }
+
+  .next-arrow {
+    left: 27rem;
+    top: 15rem;
+  }
+
+  .prev-arrow {
+    left: 4rem;
+    top: 15rem;
+  }
+
+  /* .dots {
+    top: 33rem;
+    left: -2.5rem;
+  } */
+
+
+}
+
+
+
